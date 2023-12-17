@@ -10,6 +10,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECSina.Common.AspNetCore", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECSina.Common.Swashbuckle", "Common\ECSina.Common.Swashbuckle\ECSina.Common.Swashbuckle.csproj", "{B41D838A-08F9-4E39-A470-580E2A83850A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECSina.Db", "ECSina.Db\ECSina.Db.csproj", "{83BC68F5-1527-4B2E-8AB7-2AD9D39BC9D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECSina.Core", "ECSina.Core\ECSina.Core.csproj", "{3AB5213B-79DA-4A38-8B75-10864C21C47E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +36,14 @@ Global
 		{B41D838A-08F9-4E39-A470-580E2A83850A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B41D838A-08F9-4E39-A470-580E2A83850A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B41D838A-08F9-4E39-A470-580E2A83850A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83BC68F5-1527-4B2E-8AB7-2AD9D39BC9D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83BC68F5-1527-4B2E-8AB7-2AD9D39BC9D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83BC68F5-1527-4B2E-8AB7-2AD9D39BC9D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83BC68F5-1527-4B2E-8AB7-2AD9D39BC9D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AB5213B-79DA-4A38-8B75-10864C21C47E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AB5213B-79DA-4A38-8B75-10864C21C47E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AB5213B-79DA-4A38-8B75-10864C21C47E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AB5213B-79DA-4A38-8B75-10864C21C47E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B655D539-34CE-4C38-9192-67EF37E6EF9B} = {4F4B17DA-B7FC-4A93-A561-FB67DF9BF5DF}

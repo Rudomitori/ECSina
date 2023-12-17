@@ -8,8 +8,20 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+        <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.8.1" />
+        <PackageReference Include="Hellang.Middleware.ProblemDetails" Version="6.5.1" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.0"/>
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.0" />
+        <PackageReference Include="Serilog.AspNetCore" Version="8.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Common\ECSina.Common.Core\ECSina.Common.Core.csproj" />
+      <ProjectReference Include="..\Common\ECSina.Common.Swashbuckle\ECSina.Common.Swashbuckle.csproj" />
+      <ProjectReference Include="..\ECSina.Core\ECSina.Core.csproj" />
+      <ProjectReference Include="..\ECSina.Db\ECSina.Db.csproj" />
     </ItemGroup>
 
 </Project>
