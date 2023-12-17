@@ -2,6 +2,14 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECSina.App", "ECSina.App\ECSina.App.csproj", "{2732EA0A-24B5-47C9-98F1-1212B4C73551}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{4F4B17DA-B7FC-4A93-A561-FB67DF9BF5DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECSina.Common.Core", "Common\ECSina.Common.Core\ECSina.Common.Core.csproj", "{B655D539-34CE-4C38-9192-67EF37E6EF9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECSina.Common.AspNetCore", "Common\ECSina.Common.AspNetCore\ECSina.Common.AspNetCore.csproj", "{C3D5E164-169E-4E5F-96BC-FF739D2E0271}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECSina.Common.Swashbuckle", "Common\ECSina.Common.Swashbuckle\ECSina.Common.Swashbuckle.csproj", "{B41D838A-08F9-4E39-A470-580E2A83850A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +20,22 @@ Global
 		{2732EA0A-24B5-47C9-98F1-1212B4C73551}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2732EA0A-24B5-47C9-98F1-1212B4C73551}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2732EA0A-24B5-47C9-98F1-1212B4C73551}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B655D539-34CE-4C38-9192-67EF37E6EF9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B655D539-34CE-4C38-9192-67EF37E6EF9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B655D539-34CE-4C38-9192-67EF37E6EF9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B655D539-34CE-4C38-9192-67EF37E6EF9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3D5E164-169E-4E5F-96BC-FF739D2E0271}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3D5E164-169E-4E5F-96BC-FF739D2E0271}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3D5E164-169E-4E5F-96BC-FF739D2E0271}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3D5E164-169E-4E5F-96BC-FF739D2E0271}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B41D838A-08F9-4E39-A470-580E2A83850A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B41D838A-08F9-4E39-A470-580E2A83850A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B41D838A-08F9-4E39-A470-580E2A83850A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B41D838A-08F9-4E39-A470-580E2A83850A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B655D539-34CE-4C38-9192-67EF37E6EF9B} = {4F4B17DA-B7FC-4A93-A561-FB67DF9BF5DF}
+		{C3D5E164-169E-4E5F-96BC-FF739D2E0271} = {4F4B17DA-B7FC-4A93-A561-FB67DF9BF5DF}
+		{B41D838A-08F9-4E39-A470-580E2A83850A} = {4F4B17DA-B7FC-4A93-A561-FB67DF9BF5DF}
 	EndGlobalSection
 EndGlobal
