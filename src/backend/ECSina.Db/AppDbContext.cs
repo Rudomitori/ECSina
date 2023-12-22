@@ -25,6 +25,8 @@ public sealed class AppDbContext : DbContext
         {
             builder.HasIndex(x => x.NormalizedLogin).IsUnique();
         });
+        modelBuilder.Entity<PasswordComponent>();
+        modelBuilder.Entity<RolesComponent>();
 
         modelBuilder.Entity<Message>();
         modelBuilder.Entity<TopicComponent>();

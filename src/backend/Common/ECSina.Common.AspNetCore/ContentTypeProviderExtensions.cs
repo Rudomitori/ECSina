@@ -1,4 +1,6 @@
-﻿namespace ECSina.Common.AspNetCore;
+﻿using Microsoft.AspNetCore.StaticFiles;
+
+namespace ECSina.Common.AspNetCore;
 
 public static class ContentTypeProviderExtensions
 {

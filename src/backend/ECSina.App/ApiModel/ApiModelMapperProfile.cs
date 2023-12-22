@@ -18,6 +18,10 @@ public sealed class ApiModelMapperProfile : Profile
             .IncludeBase<DataComponent, ApiDataComponent>();
 
         CreateMap<UserComponent, ApiUserComponent>().IncludeBase<DataComponent, ApiDataComponent>();
+        CreateMap<PasswordComponent, ApiPasswordComponent>()
+            .IncludeBase<DataComponent, ApiDataComponent>();
+        CreateMap<RolesComponent, ApiRolesComponent>()
+            .IncludeBase<DataComponent, ApiDataComponent>();
 
         CreateMap<ForumComponent, ApiForumComponent>()
             .IncludeBase<DataComponent, ApiDataComponent>();

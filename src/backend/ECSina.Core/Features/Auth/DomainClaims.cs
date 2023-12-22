@@ -38,13 +38,14 @@ public sealed class DomainClaims : IEnumerable<Claim>
     public static DomainClaims From(DataEntity entity)
     {
         var userComponent = entity.Components?.OfType<UserComponent>().FirstOrDefault();
+        var rolesComponent = entity.Components?.OfType<RolesComponent>().FirstOrDefault();
 
         return new DomainClaims
         {
             Id = entity.Id,
             Name = entity.Name,
             Login = userComponent?.Login,
-            IsAdmin = userComponent is { IsAdmin: true }
+            IsAdmin = rolesComponent is { IsAdmin: true }
         };
     }
 

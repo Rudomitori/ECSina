@@ -6,5 +6,4 @@ namespace ECSina.App.ApiModel.Auth;
 public class ApiUserComponent : ApiDataComponent
 {
     public required string Login { get; set; }
-    public required bool IsAdmin { get; set; }
 }

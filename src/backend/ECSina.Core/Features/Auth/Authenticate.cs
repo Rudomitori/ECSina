@@ -63,13 +63,15 @@ public sealed class Authenticate : CommandBase<Authenticate.Response>
                     cancellationToken
                 );
 
-            var userComponent = entity?.Components!.OfType<UserComponent>().FirstOrDefault();
+            var passwordComponent = entity
+                ?.Components!.OfType<PasswordComponent>()
+                .FirstOrDefault();
 
             var authenticated =
-                userComponent is { }
+                passwordComponent is { }
                 && _passwordHasher.VerifyHashedPassword(
                     entity!,
-                    userComponent.PasswordHash,
+                    passwordComponent.PasswordHash,
                     request.Password
                 );
 

@@ -92,12 +92,21 @@ public sealed class Register : CommandBase<Register.Response>
             };
 
             entity.Components.Add(
+                new PasswordComponent
+                {
+                    EntityId = entity.Id,
+                    PasswordHash = _passwordHasher.GenerateHash(request.Password),
+                    CreatedAt = now,
+                    CreatedById = domainClaims.Id,
+                }
+            );
+
+            entity.Components.Add(
                 new UserComponent
                 {
                     EntityId = entity.Id,
                     Login = login,
                     NormalizedLogin = normalizedLogin,
-                    PasswordHash = _passwordHasher.GenerateHash(request.Password),
                     CreatedAt = now,
                     CreatedById = domainClaims.Id,
                 }
