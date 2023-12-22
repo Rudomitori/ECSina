@@ -1,0 +1,1 @@
+In this project, I'm experimenting with the Entity-Component-System (ECS) pattern applied to web development.
